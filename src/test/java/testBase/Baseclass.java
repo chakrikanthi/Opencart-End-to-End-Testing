@@ -15,6 +15,7 @@ import org.apache.logging.log4j.LogManager;//Log4J
 import org.apache.logging.log4j.Logger;//log4j
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
@@ -27,6 +28,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
+import com.google.common.io.Files;
 
 
 
@@ -156,10 +159,15 @@ public class Baseclass {
 		
 		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";
 		File targetFile=new File(targetFilePath);
-		
+		Files.move(sourceFile, targetFile);
 		sourceFile.renameTo(targetFile);
 			
 		return targetFilePath;
+//		
+//		public static void highlight(WebDriver driver, WebElement element) {
+//			JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+//			jsExecutor.executeScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", element);
+//		}
 
 	}
 }

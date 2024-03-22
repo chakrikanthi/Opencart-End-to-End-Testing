@@ -5,13 +5,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_002_LoginTest">
+      <class name="testCases.TC_SC_008Updatingquantityofprdctinshopcart">
         <methods>
+          <include name="verify_updatingthequanityinshoppingcart"/>
           <include name="setup"/>
-          <include name="verify_login"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- testCases.TC_002_LoginTest -->
+      </class> <!-- testCases.TC_SC_008Updatingquantityofprdctinshopcart -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,2 +1,2 @@
-cd C:\eclipseworkspace\opencart  
+cd C:\eclipseworkspace\kanthiopencart
 mvn test

@@ -17,7 +17,8 @@
           <version>3.2.2</version>
           <configuration>
 			 <suiteXmlFiles>
-				 <suiteXmlFile>MainmasterTestng.xml</suiteXmlFile>
+				 <suiteXmlFile>MinimumquantitysetTest.xml</suiteXmlFile>
+				<!-- <suiteXmlFile>contactnumber.xml</suiteXmlFile>-->
 				 <!--if you want to run one more xml file just put one more tag LIKE THIS  <suiteXmlFile>LoginTestNG.XML.xml</suiteXmlFile> in below line-->
 			    <!--  <suiteXmlFile>LoginTestNG.XML.xml</suiteXmlFile>-->
 			 </suiteXmlFiles>

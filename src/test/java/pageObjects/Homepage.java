@@ -42,4 +42,30 @@ public void clicklogin()//added in step 5
 	login.click();
 }
 
+//HOME PAGE LOGO
+@FindBy(xpath="//a[normalize-space()='Qafox.com']")
+WebElement qafoxcomLOGO;
+
+public void logoHMPG()
+{
+	qafoxcomLOGO.click();
+}
+
+//adding -macbook to wishlist on featured section in homepage
+
+@FindBy(xpath="//div[@id='content']//div[1]//div[1]//div[3]//button[2]//i[1]") 
+WebElement addToWLinFeaturepg;
+
+public void addToWLinFeaturepg()
+{
+	addToWLinFeaturepg.click();
+}
+
+@FindBy(xpath="//a[normalize-space()='wish list']")  
+WebElement WLsucessmsg;
+
+public void WLsucessmsg()
+{
+	WLsucessmsg.click();
+}
 }

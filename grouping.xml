@@ -9,15 +9,24 @@
   <parameter name="browser" value="chrome"/>
   <groups>
   <run>
-   <include name="sanity"/>
-<include name="regression"/>
+   <!--  <include name="sanity"/>-->
+<!--  <include name="regression"/> -->
   <!-- <include name="master"/>-->
   
   </run>
   </groups>
     <classes>
      <class name="testCases.TC_001_AccountRegistrationTest"/> 
-      <class name="testCases.TC_002_LoginTest"/>      
+     <!--   <class name="testCases.TC_002_LoginTest"/> -->
+       <!--  <class name="testCases.TC_016_MinimumquantitysetTest"/>-->  
+         <!--   <class name="testCases.TC_017_Defaultquantitysetto1Test"/> --> 
+         <!--  <class name="testCases.TC_018_Validatingnegativeqty"/> -->  
+         <!--  <class name="testCases.TC_019_ValidatingthereviewtabTest"/>-->
+         <!-- <class name="testCases.TC_20_Validatingreviewtext"/> -->
+          <!--  <class name="testCases.TC_21_ValidatingZeroreviews"/>-->
+          <!--  <class name="testCases.TC_22_validateRevmandatoryfieldswarnmsg"/>-->
+           <!-- <class name="testCases.TC_23_AddingprdcttoWishlist"/>-->
+            <!--  <class name="testCases.TC_26_Relatedprctsinproductdisplaypg"/> -->  
           </classes>
   </test> <!-- Test -->
  

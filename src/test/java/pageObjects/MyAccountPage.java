@@ -14,11 +14,12 @@ public class MyAccountPage extends Basepage {
 		super(driver);
 	}
 			
-	
-	@FindBy(xpath="//h2[normalize-space()='My Account']") @CacheLookup private WebElement myAccount;  // my account page heading
-	@FindBy(xpath="//a[@class='list-group-item'][normalize-space()='Logout']") @CacheLookup private WebElement logout;
+	@FindBy(xpath="//span[@class='caret']")  WebElement myAccount;
+	//@FindBy(xpath="//h2[normalize-space()='My Account']")  WebElement myAccount;  // my account page heading
+	@FindBy(xpath="//a[@class='list-group-item'][normalize-space()='Logout']")  WebElement logout;
 	//here the logout is the element that is displayed in the my account page on right side corner not from myaccount dropdown
-	
+	@FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']") 
+	WebElement login;
 	
 	//Action methods for My account display, Logout
 	
@@ -35,9 +36,17 @@ public class MyAccountPage extends Basepage {
 				}
 	
 	}
+	public void clickmyAccount()
+	{
+		myAccount.click();
+	}
 
 	public void clicklogout()
 	{
 		logout.click();
+	}
+	public void clicklogin()
+	{
+		login.click();
 	}
 }

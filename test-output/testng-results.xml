@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-06T17:17:52 EST" name="Suite" finished-at="2023-12-06T17:18:17 EST" duration-ms="24759">
+  <suite started-at="2024-02-05T21:24:03 EST" name="Suite" finished-at="2024-02-05T21:24:33 EST" duration-ms="30202">
     <groups>
-      <group name="regression">
-        <method signature="TC_001_AccountRegistrationTest.verify_Account_Registration()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@51399530]" name="verify_Account_Registration" class="testCases.TC_001_AccountRegistrationTest"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="TC_002_LoginTest.verify_login()[pri:0, instance:testCases.TC_002_LoginTest@4afcd809]" name="verify_login" class="testCases.TC_002_LoginTest"/>
-      </group> <!-- sanity -->
-      <group name="master">
-        <method signature="TC_001_AccountRegistrationTest.verify_Account_Registration()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@51399530]" name="verify_Account_Registration" class="testCases.TC_001_AccountRegistrationTest"/>
-        <method signature="TC_002_LoginTest.verify_login()[pri:0, instance:testCases.TC_002_LoginTest@4afcd809]" name="verify_login" class="testCases.TC_002_LoginTest"/>
-      </group> <!-- master -->
     </groups>
-    <test started-at="2023-12-06T17:17:52 EST" name="chrome Test" finished-at="2023-12-06T17:18:17 EST" duration-ms="24759">
-      <class name="testCases.TC_001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_AccountRegistrationTest@51399530]" started-at="2023-12-06T17:17:52 EST" name="setup" finished-at="2023-12-06T17:18:00 EST" duration-ms="7059" status="PASS">
+    <test started-at="2024-02-05T21:24:03 EST" name="Test" finished-at="2024-02-05T21:24:33 EST" duration-ms="30202">
+      <class name="testCases.TC_SC_008Updatingquantityofprdctinshopcart">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_SC_008Updatingquantityofprdctinshopcart@4802796d]" started-at="2024-02-05T21:24:03 EST" name="setup" finished-at="2024-02-05T21:24:08 EST" duration-ms="5340" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,41 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Account_Registration()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@51399530]" started-at="2023-12-06T17:18:00 EST" name="verify_Account_Registration" finished-at="2023-12-06T17:18:07 EST" duration-ms="7948" status="PASS">
+        <test-method signature="verify_updatingthequanityinshoppingcart()[pri:0, instance:testCases.TC_SC_008Updatingquantityofprdctinshopcart@4802796d]" started-at="2024-02-05T21:24:08 EST" name="verify_updatingthequanityinshoppingcart" finished-at="2024-02-05T21:24:33 EST" duration-ms="24516" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_Account_Registration -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@51399530]" started-at="2023-12-06T17:18:08 EST" name="teardown" finished-at="2023-12-06T17:18:08 EST" duration-ms="255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_001_AccountRegistrationTest -->
-      <class name="testCases.TC_002_LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_LoginTest@4afcd809]" started-at="2023-12-06T17:18:08 EST" name="setup" finished-at="2023-12-06T17:18:12 EST" duration-ms="4665" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_login()[pri:0, instance:testCases.TC_002_LoginTest@4afcd809]" started-at="2023-12-06T17:18:12 EST" name="verify_login" finished-at="2023-12-06T17:18:17 EST" duration-ms="4216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_002_LoginTest@4afcd809]" started-at="2023-12-06T17:18:17 EST" name="teardown" finished-at="2023-12-06T17:18:17 EST" duration-ms="247" status="PASS">
+        </test-method> <!-- verify_updatingthequanityinshoppingcart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC_SC_008Updatingquantityofprdctinshopcart@4802796d]" started-at="2024-02-05T21:24:33 EST" name="teardown" finished-at="2024-02-05T21:24:33 EST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_002_LoginTest -->
-    </test> <!-- chrome Test -->
+      </class> <!-- testCases.TC_SC_008Updatingquantityofprdctinshopcart -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

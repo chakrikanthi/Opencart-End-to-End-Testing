@@ -49,7 +49,7 @@ public class TC_001_AccountRegistrationTest extends Baseclass {
 		
 		String confmsg= regpage.getConfirmationMsg();
 		logger.info("Validating expected message");
-		if(confmsg.equals("Your Account Has Been Created!"))//here we are intentionally failling the tc for taking screen shot ..actul value is "Your Account Has Been Created!"
+		if(confmsg.equals("Your Account Has Been Created"))//here we are intentionally failling the tc for taking screen shot ..actul value is "Your Account Has Been Created!"
 		{
 			logger.info("test passed..");
 			Assert.assertTrue(true);
