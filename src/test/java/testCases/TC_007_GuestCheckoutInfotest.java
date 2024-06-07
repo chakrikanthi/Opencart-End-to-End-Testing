@@ -1,11 +1,12 @@
 package testCases;
 
-import org.testng.Assert;
+
+
 import org.testng.annotations.Test;
 
 import pageObjects.AddingproductToCart;
 import pageObjects.CheckoutInfo;
-import pageObjects.Homepage;
+
 import testBase.Baseclass;
 
 public class TC_007_GuestCheckoutInfotest extends Baseclass {
@@ -14,7 +15,7 @@ public class TC_007_GuestCheckoutInfotest extends Baseclass {
 	@Test(groups={"regression","master"})
 	public void Verify_CheckoutInfo() throws InterruptedException 
 	{
-		Homepage hp= new Homepage(driver); 
+		
 		AddingproductToCart addpdct= new AddingproductToCart(driver);
 		addpdct.dropdownlaptopandbooks();
 		addpdct.showAllLaptopsandNotebooks();
@@ -34,16 +35,15 @@ public class TC_007_GuestCheckoutInfotest extends Baseclass {
 
 		CheckoutInfo chckin= new CheckoutInfo(driver);
 		Thread.sleep(2000);
-		chckin.setfirstname(randomstring().toUpperCase());
+		chckin.BillingfirstName(randomstring().toUpperCase());
 		logger.info("Entered First name...");
-		chckin.setlastname(randomstring().toUpperCase());
+		chckin.BillinglastName(randomstring().toUpperCase());
 		logger.info("Entered Last name...");
-		chckin.setcompany(randomstring().toUpperCase());
+		chckin.Billingcompany(randomstring().toUpperCase());
 		logger.info("Entered company name...");
-		chckin.setaddress1(randomstring().toUpperCase());
+		chckin.Billingaddress1(randomstring().toUpperCase());
 		logger.info("Entered address1...");
-		chckin.setaddress2(randomstring().toUpperCase());
-		logger.info("Entered address2...");
+		
 		chckin.setcity(randomstring().toUpperCase());
 		logger.info("Entered city name...");
 		chckin.setpostCode(randomNumber());
@@ -53,13 +53,14 @@ public class TC_007_GuestCheckoutInfotest extends Baseclass {
 		chckin.settelephone(randomNumber());
 		logger.info("Entered telephone number...");
 		Thread.sleep(1000);
-		chckin.setCountry("India");
+		chckin.Billingdrpcountry("India");
+	
 		logger.info("Selected the country...");
 		Thread.sleep(1000);
-		chckin.setregionorState("Andhra Pradesh");
+		chckin.BillingdrpregionorState("Andhra Pradesh");
 		logger.info("Selected state...");
 		Thread.sleep(1000);
-		chckin.setcontinuebtn();
+		chckin.Billingcontinuebtn();
 		Thread.sleep(1000);
 		chckin.setshippingcontinuebtn();
 		Thread.sleep(1000);

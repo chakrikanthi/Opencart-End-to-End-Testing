@@ -2,11 +2,12 @@ package testCases;
 
 import org.testng.annotations.Test;
 
+
 import pageObjects.Homepage;
 import pageObjects.Loginpage;
-import pageObjects.SearchboxandIcon;
+
 import pageObjects.Wishlistafteraddingprdct;
-import pageObjects.iphone;
+
 import testBase.Baseclass;
 
 public class TC_24_ProductimageinWishListpage extends Baseclass{

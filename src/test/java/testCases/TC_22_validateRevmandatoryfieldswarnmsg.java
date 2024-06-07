@@ -1,9 +1,10 @@
 package testCases;
 
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
-import pageObjects.Samsunggalxytab;
+
 import pageObjects.SearchboxandIcon;
 import pageObjects.Validatingthereviewtab;
 import testBase.Baseclass;

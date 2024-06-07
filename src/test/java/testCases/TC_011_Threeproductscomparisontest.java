@@ -1,8 +1,6 @@
 package testCases;
 
 import org.testng.annotations.Test;
-
-import pageObjects.Homepage;
 import pageObjects.ThreeProductsComparison;
 import testBase.Baseclass;
 
@@ -10,7 +8,6 @@ public class TC_011_Threeproductscomparisontest extends Baseclass{
 	@Test(groups={"regression","master"})
 	public void verify_Threeproductscomparisontest() throws InterruptedException
 	{
-		Homepage hp= new Homepage(driver);
 		ThreeProductsComparison thrpdcmp=  new ThreeProductsComparison(driver);
 		thrpdcmp.searchbox("MacBook");
 		thrpdcmp.searchIcon();

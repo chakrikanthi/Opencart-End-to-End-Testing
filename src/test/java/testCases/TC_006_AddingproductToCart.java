@@ -2,9 +2,11 @@ package testCases;
 
 import org.testng.annotations.Test;
 
+
+
 import pageObjects.AddingproductToCart;
-import pageObjects.Homepage;
-import pageObjects.Loginpage;
+//import pageObjects.Homepage;
+
 import testBase.Baseclass;
 
 public class TC_006_AddingproductToCart extends Baseclass{
@@ -15,7 +17,7 @@ public class TC_006_AddingproductToCart extends Baseclass{
 	logger.info("!****TC_006_AddingproductToCart***!");
 	logger.debug("Adding product log started...");
 	
-	Homepage hp= new Homepage(driver);  //Create Object for Homepage
+	//Homepage hp= new Homepage(driver);  //Create Object for Homepage
 	Thread.sleep(2300);
 	/*hp.clickMyAccount();
 	logger.info("clicked on MyAccount in Homepage..");

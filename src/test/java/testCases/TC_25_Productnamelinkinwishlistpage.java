@@ -2,7 +2,8 @@ package testCases;
 
 import org.testng.annotations.Test;
 
-import pageObjects.Basepage;
+
+
 import pageObjects.Homepage;
 import pageObjects.Loginpage;
 import pageObjects.Wishlistafteraddingprdct;

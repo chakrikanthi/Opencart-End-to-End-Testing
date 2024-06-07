@@ -19,10 +19,10 @@
   <parameter name="os" value="Windows"/>
   <parameter name="browser" value="chrome"/>
     <classes>
-     <!--  <class name="testCases.TC_001_AccountRegistrationTest"/> 
-     <class name="testCases.TC_002_LoginTest"/>-->
+       <class name="testCases.TC_001_AccountRegistrationTest"/> 
+    <!-- <class name="testCases.TC_002_LoginTest"/>-->
      <!-- <class name="testCases.TC_007_GuestCheckoutInfotest"/>-->
-      <class name="testCases.TC_008_Returningcustomercheckout"/>
+       <!-- <class name="testCases.TC_008_Returningcustomercheckout"/>-->
       
           </classes>
   </test> <!-- Test -->

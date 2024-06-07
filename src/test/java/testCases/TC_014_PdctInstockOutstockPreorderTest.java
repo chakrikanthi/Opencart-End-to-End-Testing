@@ -3,8 +3,6 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import pageObjects.Homepage;
 import pageObjects.PdctInstockOutstockPreorder;
 import testBase.Baseclass;
 
@@ -13,7 +11,7 @@ public class TC_014_PdctInstockOutstockPreorderTest extends Baseclass
 	@Test(groups= {"sanity","master"})
 	
 public void Verify_PdctInstockOutstockPreorder() {
-	Homepage hm= new Homepage(driver);
+	
 	PdctInstockOutstockPreorder prdctstock= new PdctInstockOutstockPreorder(driver);
 	prdctstock.searchbox("macbook");
 	prdctstock.searchbtn();

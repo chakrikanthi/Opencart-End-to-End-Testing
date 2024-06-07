@@ -1,6 +1,7 @@
 package pageObjects;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -33,7 +34,7 @@ public class imac extends Basepage {
 			@FindBy(xpath="//a[normalize-space()='iMac']") 
 			WebElement iMac;
 			
-			public void imac()
+			public void imacitem()
 			{
 				iMac.click();
 			}

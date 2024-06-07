@@ -1,0 +1,33 @@
+package testCases;
+
+import org.testng.annotations.Test;
+
+import pageObjects.Homepage;
+import pageObjects.Loginpage;
+import pageObjects.MyAccountPage;
+import testBase.Baseclass;
+
+public class TC_AB_006warningmsgwhendeletingdefaultaddress extends Baseclass {
+	@Test
+	public void warningmsgwhendeletingdefaultaddress() {
+		Homepage hp= new Homepage(driver);
+		hp.clickMyAccount();
+		hp.clicklogin();
+		Loginpage lp= new Loginpage(driver);
+		lp.setEmail("satvik@gmail.com");
+		lp.setPassword("kanthi123"); 
+		lp.clicklogin();  
+		logger.info("clicked on login button...");
+		System.out.println("We are in page:"+driver.getTitle());
+		MyAccountPage MA= new MyAccountPage(driver);
+		MA.addressBookfromRIGHTcolumn();
+		System.out.println("We are in page:"+driver.getTitle());
+		String defaultaddress=MA.satvikaddress();
+		System.out.println("Default address of the customer is:\n"+defaultaddress);
+		MA.Satvikaddressdelete();
+		boolean warningstatus=MA.satvikaddressdeleteWARNINGmsg();
+		System.out.println("Warning display status is:"+warningstatus);
+		
+	}
+
+}

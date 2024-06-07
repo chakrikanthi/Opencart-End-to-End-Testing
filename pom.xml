@@ -9,15 +9,17 @@
 			   <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.11.0</version>
+          <version>3.13.0</version>
           </plugin>
 			   <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.2.2</version>
+          <version>3.2.5</version>
           <configuration>
 			 <suiteXmlFiles>
-				 <suiteXmlFile>MinimumquantitysetTest.xml</suiteXmlFile>
+				 <!--  <suiteXmlFile>MinimumquantitysetTest.xml</suiteXmlFile>C:\Users\chakr\Desktop\SAMPLESCREENSHOT.png-->
+				 
+				 <suiteXmlFile>AccountRegistrationTest.xml</suiteXmlFile>
 				<!-- <suiteXmlFile>contactnumber.xml</suiteXmlFile>-->
 				 <!--if you want to run one more xml file just put one more tag LIKE THIS  <suiteXmlFile>LoginTestNG.XML.xml</suiteXmlFile> in below line-->
 			    <!--  <suiteXmlFile>LoginTestNG.XML.xml</suiteXmlFile>-->

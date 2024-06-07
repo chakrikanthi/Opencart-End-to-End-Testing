@@ -12,7 +12,7 @@ public class TC_SC_003ShoppingcartfromSitemapFooterpage extends Baseclass{
 		imac imac= new imac(driver);
 		imac.searchbox("imac");
 		imac.searchIcon();
-		imac.imac();
+		imac.imacitem();
 		imac.addtocart();
 		Thread.sleep(3500);
 		imac.sitemap();

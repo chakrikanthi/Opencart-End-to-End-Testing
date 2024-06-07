@@ -2,22 +2,22 @@ package testCases;
 
 import org.testng.annotations.Test;
 
+
 import pageObjects.AddingproductToCart;
 import pageObjects.CheckoutInfo;
-import pageObjects.Homepage;
+
 import pageObjects.Loginpage;
 import pageObjects.Logout;
-import pageObjects.MyAccountPage;
+
 import testBase.Baseclass;
-import utilities.DataProviders;
+
 
 public class TC_008_Returningcustomercheckout extends Baseclass 
 {
 	@Test(groups={"regression","master"})
 public void Returningcustomercheckout() throws InterruptedException
 {
-	
-	Homepage hp= new Homepage(driver); 
+
 	AddingproductToCart addpdct= new AddingproductToCart(driver);
 	addpdct.dropdownlaptopandbooks();
 	addpdct.showAllLaptopsandNotebooks();
@@ -38,7 +38,8 @@ public void Returningcustomercheckout() throws InterruptedException
     //Thread.sleep(2000);
     CheckoutInfo chckin= new CheckoutInfo(driver);
     chckin.setreturncustpaycontinue();
-    chckin.setreturncustshipaddresscontinue();
+    chckin.deliveryDetailcontinuebtn();
+    chckin.deliveryMETHODcontinuebtn();
     
     chckin.setreturncustshipmethodcontinue();
     Thread.sleep(1000);

@@ -23,7 +23,7 @@ public class TC_39_WL_FORLOOPaddingduplicateprdcttoWL extends Baseclass{
 		imac imac= new imac(driver);
 		imac.searchbox("imac");
 		imac.searchIcon();
-		imac.imac();
+		imac.imacitem();
 	for(int i=1;  i<4; i++ ) 
 	{
 			

@@ -1,9 +1,6 @@
 package testCases;
 
 import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
 
 import pageObjects.HPLP3065;

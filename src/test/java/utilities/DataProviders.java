@@ -114,4 +114,26 @@ public class DataProviders {
 		return Reviewtxtdata;
 		
 	}
+	@DataProvider (name="Affiliatedtestdata")
+	public String[][]getData5() throws IOException
+	{
+		String path=".\\testdata\\Affiliatedtestdata.xlsx";
+		ExcelUtility xlutil=new ExcelUtility(path);
+		int totalrows=xlutil.getRowCount("Sheet1");	
+		int totalcols=xlutil.getCellCount("Sheet1",1);
+		
+		String Reviewtxtdata[][]=new String[totalrows][totalcols];
+		for(int i=1;i<=totalrows;i++)  //1   //read the data from xl storing in two deminsional array
+		{		
+			for(int j=0;j<totalcols;j++)  //0    i is rows j is col
+			{
+				Reviewtxtdata[i-1][j]= xlutil.getCellData("Sheet1",i, j);  //1,0
+			}
+		}
+		
+		return Reviewtxtdata;
+		
+	}
+	
+	
 }

@@ -1,15 +1,13 @@
 package testCases;
 
 import org.testng.annotations.Test;
-
-import pageObjects.Homepage;
 import pageObjects.ProductThumbnail;
 import testBase.Baseclass;
 
 public class TC_012_ProductThumbnailtest extends Baseclass{
 	@Test(groups={"regression","master"})
 	public void Verify_ProctThumbnailtest() throws InterruptedException {
-		Homepage hp= new Homepage(driver);
+		
 		ProductThumbnail pdctnl= new ProductThumbnail(driver);
 		pdctnl.searchbox("Macbook air");
 		pdctnl.searchbtn();

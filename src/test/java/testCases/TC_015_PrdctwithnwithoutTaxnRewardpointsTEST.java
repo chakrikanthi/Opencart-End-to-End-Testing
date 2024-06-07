@@ -1,9 +1,10 @@
 package testCases;
 
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
-import pageObjects.Homepage;
+
 import pageObjects.PrdctwithnwithoutTaxnRewardpoints;
 import pageObjects.SearchboxandIcon;
 import testBase.Baseclass;
@@ -12,7 +13,7 @@ public class TC_015_PrdctwithnwithoutTaxnRewardpointsTEST extends Baseclass {
 	@Test(groups={"regression","master"})
 	public void verify_PrdctwithnwithoutTaxnRewardpoints()
 	{
-		Homepage hm= new Homepage(driver);
+	
 		SearchboxandIcon scbic= new SearchboxandIcon(driver);
 		scbic.searchbox("HP LP");
 		scbic.searchIcon();

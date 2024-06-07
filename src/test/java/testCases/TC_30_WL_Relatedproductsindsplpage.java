@@ -2,9 +2,10 @@ package testCases;
 
 import org.testng.annotations.Test;
 
+
 import pageObjects.Loginpage;
 import pageObjects.MyAccountPage;
-import pageObjects.SearchboxandIcon;
+
 import pageObjects.imac;
 import testBase.Baseclass;
 
@@ -24,7 +25,7 @@ public class TC_30_WL_Relatedproductsindsplpage extends Baseclass {
 		imac imacprd=new imac(driver);
 		imacprd.searchbox("imac");
 		imacprd.searchIcon();
-		imacprd.imac();
+		imacprd.imacitem();
 		Thread.sleep(4000);
 		imacprd.Addingrelatedprdct();
 		Thread.sleep(4000);

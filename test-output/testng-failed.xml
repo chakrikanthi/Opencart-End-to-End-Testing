@@ -5,13 +5,12 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_SC_008Updatingquantityofprdctinshopcart">
+      <class name="testCases.TC_LG_001ValidatingLogoutfromMyAcntDropdown">
         <methods>
-          <include name="verify_updatingthequanityinshoppingcart"/>
+          <include name="ValidatingLogoutfromMyAcntDropdown"/>
           <include name="setup"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- testCases.TC_SC_008Updatingquantityofprdctinshopcart -->
+      </class> <!-- testCases.TC_LG_001ValidatingLogoutfromMyAcntDropdown -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

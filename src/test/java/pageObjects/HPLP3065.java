@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class HPLP3065 extends Basepage{
 
@@ -96,10 +97,31 @@ public class HPLP3065 extends Basepage{
 			
 			@FindBy(xpath="//a[normalize-space()='shopping cart']") 
 			WebElement successmsgshoppingCart;
-			
 			public void successmsgshoppingCart()
 			{
 				successmsgshoppingCart.click();
+			}
+			@FindBy(xpath="//a[normalize-space()='shopping cart']") 
+			WebElement successmsgshoppingCart1;
+			public void successmsgshoppingCarturltitle()
+			{
+				
+				String Currenturl=driver.getCurrentUrl();
+				System.out.println(Currenturl);
+				if (Currenturl.equals("https://tutorialsninja.com/demo/index.php?route=checkout/cart")) {
+					System.out.println("Current URL is validated correctly");
+					 Assert.assertTrue(true);
+				}
+				
+
+				String CurrentTitle=driver.getTitle();
+				System.out.println(CurrentTitle);
+				if (CurrentTitle.equals("Shopping Cart")) {
+					System.out.println("Current Title is validated correctly");
+					 Assert.assertTrue(true);
+				}
+				
+				
 			}
 			
 			// weight of the product---"Shopping Cart  (1.00kg)"
@@ -183,4 +205,44 @@ public class HPLP3065 extends Basepage{
 			@FindBy(xpath="//ul[@class='breadcrumb']") 
 			WebElement breadcrumbshoppingCart;
 			
+			//EMPTY CART MESSAGE
+			@FindBy(xpath="//div[@id='content']//p[contains(text(),'Your shopping cart is empty!')]") 
+		   WebElement yourShoppingCartIsEmpty;
+			
+			public String emptycartmsg()
+			{
+				return yourShoppingCartIsEmpty.getText();
+			}
+			
+			@FindBy(xpath="//title[normalize-space()='Your Store']") 
+			WebElement titleElement;
+			public String titlepage()
+			{
+				String Title= titleElement.getText();
+				return Title;
+			}
+			@FindBy(xpath="//a[normalize-space()='Qafox.com']")
+			 private WebElement Titleofthepage;
+			public String titleofthepage()
+			{
+				String Title1= Titleofthepage.getText();
+				System.out.println(Title1);
+				return Title1;
+			}
+			//check out button in shopping cart page
+			@FindBy(xpath="//a[contains(text(),'Checkout')]") 
+			WebElement checkoutbtninSHPage;
+			
+			public void checkoutbtninSHPage()
+			{
+				checkoutbtninSHPage.click();
+			}
+			
+			@FindBy(xpath="//span[normalize-space()='Checkout']") 
+			WebElement checkoutinheader;
+			
+			public void checkoutinheader()
+			{
+				checkoutinheader.click();
+			}
 }

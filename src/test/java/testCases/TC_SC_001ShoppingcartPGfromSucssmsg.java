@@ -13,7 +13,7 @@ public class TC_SC_001ShoppingcartPGfromSucssmsg extends Baseclass {
 		imac imac= new imac(driver);
 		imac.searchbox("imac");
 		imac.searchIcon();
-		imac.imac();
+		imac.imacitem();
 		imac.addtocart();
 		String successmsg= imac.SucessmgsafteraddSC();
 		System.out.println(successmsg);
