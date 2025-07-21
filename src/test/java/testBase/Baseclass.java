@@ -125,13 +125,13 @@ public class Baseclass {
 		driver.manage().window().maximize();
 	
 	}
-	/*
+	
 	@AfterClass(groups= {"sanity","regression","master"})
 	public void teardown()
 	{
 		driver.quit();
 	}
-	*/
+	
 	public String randomstring()
 	{
 		String generatedstring=RandomStringUtils.randomAlphabetic(5);
@@ -165,11 +165,6 @@ public class Baseclass {
 		sourceFile.renameTo(targetFile);
 			
 		return targetFilePath;
-//		
-//		public static void highlight(WebDriver driver, WebElement element) {
-//			JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-//			jsExecutor.executeScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", element);
-//		}
 
 	}
 }

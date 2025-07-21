@@ -15,7 +15,8 @@ public	WebDriver driver;
 	}
 
 	
-	//Page object Elements /Locators
+	//Page object Elements
+	//Locators
 	@FindBy(xpath="//input[@id='input-firstname']") 
 	WebElement txtfirstName;
 	

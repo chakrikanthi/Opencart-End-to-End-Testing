@@ -5,12 +5,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_LG_001ValidatingLogoutfromMyAcntDropdown">
+      <class name="testCases.TC_003_LoginDDT">
         <methods>
-          <include name="ValidatingLogoutfromMyAcntDropdown"/>
           <include name="setup"/>
+          <include name="verify_loginDDT" invocation-numbers="1 2 3 5"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- testCases.TC_LG_001ValidatingLogoutfromMyAcntDropdown -->
+      </class> <!-- testCases.TC_003_LoginDDT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
