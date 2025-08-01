@@ -19,7 +19,7 @@
 			 <suiteXmlFiles>
 				 <!--  <suiteXmlFile>MinimumquantitysetTest.xml</suiteXmlFile>C:\Users\chakr\Desktop\SAMPLESCREENSHOT.png-->
 				 
-				 <suiteXmlFile>AccountRegistrationTest.xml</suiteXmlFile>
+				 <suiteXmlFile>TC_001_AccountRegistrationTest.xml</suiteXmlFile>
 				<!-- <suiteXmlFile>contactnumber.xml</suiteXmlFile>-->
 				 <!--if you want to run one more xml file just put one more tag LIKE THIS  <suiteXmlFile>LoginTestNG.XML.xml</suiteXmlFile> in below line-->
 			    <!--  <suiteXmlFile>LoginTestNG.XML.xml</suiteXmlFile>-->
